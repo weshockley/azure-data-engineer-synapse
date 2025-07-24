@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "emilysworkspace"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlStackoverflow_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
+		},
+		"Snowflake1_connectionString": {
+			"value": ""
+		},
+		"SnowflakeDemo_YellowTrips_connectionString": {
+			"value": ""
+		},
+		"StackOverflow2_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().source_database};User ID=dv_admin"
+		},
+		"StackOverflowTest2_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
+		},
+		"datakickstart-synapse-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:datakickstart-synapse.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"datakickstart_databricks_ls_accessToken": {
+			"value": ""
+		},
+		"dvtrainingadls_accountKey": {
+			"value": ""
+		},
+		"emilysworkspace-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:emilysworkspace.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"sandboxsqlserverless_connectionString": {
+			"value": ""
+		},
+		"synapse_serverless_datakickstart_ls_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=datakickstart-synapse-ondemand.sql.azuresynapse.net;Initial Catalog=demo"
+		},
+		"LogOutput_datakickstartadls_properties_typeProperties_serviceEndpoint": {
+			"value": "https://datakickstartadls.blob.core.windows.net/"
+		},
+		"datakickstart-synapse-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datakickstartadls.dfs.core.windows.net"
+		},
+		"datakickstartadls2_ls_properties_typeProperties_url": {
+			"value": "https://datakickstartadls2.dfs.core.windows.net/"
+		},
+		"datakickstartadls_ls_properties_typeProperties_url": {
+			"value": "https://datakickstartadls.dfs.core.windows.net"
+		},
+		"demokv_properties_typeProperties_baseUrl": {
+			"value": "https://dvtrainingkv.vault.azure.net/"
+		},
+		"dvtrainingadls_properties_typeProperties_url": {
+			"value": "https://dvtrainingadls.dfs.core.windows.net"
+		},
+		"dvtrainingadls_blobsas_ls_sasUri": {
+			"value": ""
+		},
+		"emilysworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://contosolakeemily.dfs.core.windows.net"
+		},
+		"nyc_tlc_yellow_sasUri": {
+			"value": ""
+		}
+	}
+}
