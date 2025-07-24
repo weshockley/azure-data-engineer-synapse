@@ -1,0 +1,25 @@
+name: Synapse workspace deployment
+on:
+  workflow_dispatch:
+  push:
+    branches: ["workspace_publish"]
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Azure/Synapse-workspace-deployment@V1.9.1
+        with:
+          TargetWorkspaceName: ''
+          TemplateFile: './azure-data-engineer-synapse/TemplateForWorkspace.json'
+          ParametersFile: './azure-data-engineer-synapse/TemplateParametersForWorkspace.json'
+          environment: 'Azure Public'
+          resourceGroup: 'rg-em-synapse'
+          clientId: ${{ secrets.CLIENTID }}
+          clientSecret: ${{ secrets.CLIENTSECRET }}
+          subscriptionId: ${{ secrets.SUBID }}
+          tenantId: ${{ secrets.TENANTID }}   
+          operation: 'deploy'
+         
+  
+          
