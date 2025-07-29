@@ -35,15 +35,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebook": {
-						"referenceName": "stackoverflow_ingest_adls",
-						"type": "NotebookReference"
-					},
 					"snapshot": true,
-					"sparkPool": {
-						"referenceName": "sparkLogging",
-						"type": "BigDataPoolReference"
-					},
 					"executorSize": null,
 					"conf": {
 						"spark.dynamicAllocation.enabled": null,
@@ -71,6 +63,9 @@
 						]
 					}
 				],
+				"policy": {
+					"secureInput": false
+				},
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
