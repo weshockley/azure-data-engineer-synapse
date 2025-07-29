@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: Azure/Synapse-workspace-deployment@V1.9.1
         with:
-          TargetWorkspaceName: ''
+          TargetWorkspaceName: 'emilysworkspace'
           TemplateFile: './azure-data-engineer-synapse/TemplateForWorkspace.json'
           ParametersFile: './azure-data-engineer-synapse/TemplateParametersForWorkspace.json'
           environment: 'Azure Public'
