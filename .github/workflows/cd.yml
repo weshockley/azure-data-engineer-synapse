@@ -11,8 +11,8 @@ jobs:
       - uses: Azure/Synapse-workspace-deployment@V1.9.1
         with:
           TargetWorkspaceName: 'emilysworkspace-uat'
-          TemplateFile: './azure-data-engineer-synapse/TemplateForWorkspace.json'
-          ParametersFile: './azure-data-engineer-synapse/TemplateParametersForWorkspace.json'
+          TemplateFile: './emilysworkspace/TemplateForWorkspace.json'
+          ParametersFile: './emilysworkspace/TemplateParametersForWorkspace.json'
           environment: 'Azure Public'
           resourceGroup: 'rg-em-synapse'
           clientId: ${{ secrets.CLIENTID }}
