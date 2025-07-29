@@ -15,10 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebook": {
-						"referenceName": "pyspark_logging",
-						"type": "NotebookReference"
-					},
 					"parameters": {
 						"location": {
 							"value": {
@@ -29,10 +25,6 @@
 						}
 					},
 					"snapshot": true,
-					"sparkPool": {
-						"referenceName": "sparkLogging2",
-						"type": "BigDataPoolReference"
-					},
 					"executorSize": null,
 					"conf": {
 						"spark.dynamicAllocation.enabled": null,
@@ -101,14 +93,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": {
-						"value": "https://@{pipeline().parameters.workspace}.ods.opinsights.azure.com/api/logs?api-version=2016-04-01",
-						"type": "Expression"
-					},
-					"connectVia": {
-						"referenceName": "AutoResolveIntegrationRuntime",
-						"type": "IntegrationRuntimeReference"
-					},
 					"method": "POST",
 					"headers": {
 						"content-type": "application/json",
@@ -121,6 +105,14 @@
 							"value": "@{formatDateTime(utcnow(), 'ddd, dd MMM yyyy HH:mm:ss G\\MT')}",
 							"type": "Expression"
 						}
+					},
+					"url": {
+						"value": "https://@{pipeline().parameters.workspace}.ods.opinsights.azure.com/api/logs?api-version=2016-04-01",
+						"type": "Expression"
+					},
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
 					},
 					"body": {
 						"value": "[{\"TimeGeneratedPipeline\": \"2022-12-07 17:10:01\", \"message\": \"Script completed successfully.\", \"notebook\": \"stackoverflow_fact_create\", \"platform\": \"Synapse Pipelines\", \"version\": 1.0}]",
