@@ -6043,7 +6043,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "SELECT 3+3",
+					"query": "SELECT 1+2",
 					"metadata": {
 						"language": "sql"
 					},
