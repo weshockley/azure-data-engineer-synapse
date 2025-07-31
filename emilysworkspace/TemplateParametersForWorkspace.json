@@ -9,7 +9,7 @@
 			"value": ""
 		},
 		"AzureSqlStackoverflow_connectionString": {
-			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-999-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
 		},
 		"Snowflake1_connectionString": {
 			"value": ""

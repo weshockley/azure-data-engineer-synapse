@@ -14,7 +14,7 @@
 		"AzureSqlStackoverflow_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlStackoverflow'",
-			"defaultValue": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-999-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
+			"defaultValue": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
 		},
 		"Snowflake1_connectionString": {
 			"type": "secureString",
@@ -6043,7 +6043,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "SELECT 5+5",
+					"query": "SELECT 2+2",
 					"metadata": {
 						"language": "sql"
 					},
