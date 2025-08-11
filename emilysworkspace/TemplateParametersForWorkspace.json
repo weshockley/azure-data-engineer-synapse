@@ -18,7 +18,7 @@
 			"value": ""
 		},
 		"StackOverflow2_connectionString": {
-			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-999-sqlserver.database.windows.net;Initial Catalog=@{linkedService().source_database};User ID=dv_admin"
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().source_database};User ID=dv_admin"
 		},
 		"StackOverflowTest2_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sandbox-2-sqlserver.database.windows.net;Initial Catalog=@{linkedService().database_name};User ID=dv_admin"
